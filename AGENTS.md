@@ -212,3 +212,9 @@ Apply these rules to release readiness reports and text requested for pasting in
 - Add focused regression tests for accepted new behavior when feasible. Update documentation or examples when the change would otherwise make existing guidance materially false, unsafe, or misleading; correct use depends on a non-obvious constraint, migration step, compatibility boundary, or operational warning; or the accepted feature would otherwise be practically unusable. Do not require optional documentation or examples solely for completeness.
 - Determine `docs/` delivery timing separately from documentation necessity. When required `docs/` content would describe behavior that is not yet in the latest published release, leave it out of the feature or bug-fix pull request and treat it as separately timed docs-only work, not as an incomplete current pull request. This exception does not automatically apply to examples or code-level documentation that ships with the changed API.
 - Commit messages should be concise and written in the imperative mood. Small, focused commits are preferred.
+
+<!-- PSEUDOCODE-SYSTEMS-THINKING v1 -->
+## Pseudocode and systems thinking
+
+Before material research or implementation work, read `RESEARCH_METHOD.md` and the nearest project instructions. Define the system boundary and write/update numbered pseudocode before changing the relevant workflow. Map material steps to actual implementation, independent checks and output evidence. Use `research-method/contract.template.json` without treating a completed template as verified execution. For a trivial edit, update only the affected step or note why the algorithm is unchanged. Preserve project-specific permissions, pauses, scientific results, attribution and release rules. Apply this method to all subprojects, keeping each project's own sources, algorithm and evidence record separate.
+<!-- END PSEUDOCODE-SYSTEMS-THINKING -->
